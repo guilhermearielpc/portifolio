@@ -1,0 +1,103 @@
+header {
+    width: 90%;
+    height: 12%; /* Aumentado para facilitar a navegação em telas menores */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: var(--verde-escuro);
+    color: var(--verde-limao);
+}
+
+#logo {
+    width: 30%; /* Mais espaço para o logo em telas menores */
+    height: 100%; /* Ajuste de altura */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icone_logo {
+    width: 5vw;
+    height: 5vw;
+    background-image: url(./../assets/logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    margin-right: 1vw;
+}
+
+#profissao {
+    font-family: "Bebas Neue";
+    font-size: 1.5vw; /* Fonte responsiva para telas menores */
+    text-align: center;
+}
+
+#btns_cabecalho {
+    width: 30%;
+    height: 100%; /* Reduzido para ocupar menos espaço */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+}
+
+.btn_cabecalho {
+    width: 30%;
+    height: 40%;
+    border-radius: 80VW;
+    font-size: 1.4vw; /* Ajustado para proporcionalidade em telas menores */
+    color: yellow;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.btn_cabecalho:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #icone_logo {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #profissao {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #btns_cabecalho {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .btn_cabecalho {
+        width: 10vw;
+        height: 10vw;
+        font-size: 5vw;
+        margin: 2vw 2vw 5vw;
+    }
+}

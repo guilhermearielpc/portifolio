@@ -1,0 +1,40 @@
+footer {
+    width: 90%;
+    height: 10%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+}
+
+.btn_rodape {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 1%;
+    font-size: 2.5vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+.btn_rodape:hover {
+    color: yellow;
+    transform: scale(1.2);
+}
+
+/* Ajuste responsivo para telas menores */
+@media (max-width: 480px) {
+    footer {
+        justify-content: center;
+    }
+
+    .btn_rodape {
+        width: 6vw;
+        height: 6vw;
+        font-size: 6vw;
+        margin: 0 2%;
+    }
+}
